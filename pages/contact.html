@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Shopzone-Contact </title>
+	<meta charset="UTF-8">
+	<meta name="description" content="Shopzone is an e-commerce website.It offers great deals on daily basisIt has vast variety of clothing, electronics and sports options.">
+	<meta name="author" content="Jasbir_Sukhman">
+	<meta name="robots" content="no index;nofollow">    <!-- Comment this line for public -->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="icon" href="../logo/brand-new-logo-small.png" type="image/png" sizes="32x32">   <!-- size="32x32" is normal,recommended -->
+	
+	<!--  STYLE BELOW -->
+	
+	<link rel="stylesheet" type="text/css" href="../css/global.css?ver=1">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="../css/global.css">
+	<link rel="stylesheet" href="../css/navigation.css">
+	<link rel="stylesheet" href="../css/header-logo.css">
+	<link rel="stylesheet" href="../css/main-body-index.css">
+	<link rel="stylesheet" href="../css/footer-all.css">
+	<link rel="stylesheet" href="../css/button.css">
+	<style>
+			/*  Contact form */
+
+body {font-family: Arial, Helvetica, sans-serif;}
+* {box-sizing: border-box;}
+
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+	margin-left:45%;
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+	margin:50px 200px;
+	
+	
+}
+
+	
+	</style>
+</head>
+
+<body>
+
+	<!-- Header With logo -->
+	<header style="padding:20px;">
+		
+		<a href="../index.html" title="shopzone">
+			<img src="../logo/brand-new-logo.png" width="200px;" alt="shopzone logo"><!-- THIS IS YOUR BUSINESS LOGO, NAME, etc -->
+		</a>			
+		
+		<a  href="register.html" title="Register/Login">
+			<button id="register" type="button" title="Register with us">Register/Login</button>
+		</a>	
+	</header>
+	
+	<!-- Navigation bar -->
+	<div class="ul-container">
+		<ul>
+			<li>
+				<a class="active" href="../index.html" title="Home">
+					<i class="fa fa-home" alt="Home icon"> Home</i>
+				</a>
+			</li>
+			
+			<li>
+				<a href="#"  title="Categories">
+					<i class="fa fa-list-alt" alt="Categories icon"> Categories</i>
+				</a>
+			
+			<ul>   
+				<li><a href="electronics.html">Electronics</a></li> 
+				<li><a href="clothing.html">Clothing</a></li>
+				<li><a href="sports.html">Sports</a></li>
+				<li><a href="beauty.html">Beauty</a></li>
+				<li><a href="books.html">Books</a></li>
+			</ul>	
+		
+			
+			<li>
+				<a href="about-us.html" alt="about icon"  title="About Us">
+					<i class="fa fa-info"> About us</i>
+				</a>
+			</li>
+			
+			<li>
+				<a href="contact.html" title="Contact" alt="contact icon">
+					<i class="fa fa-phone"> Contact</i>
+				</a>
+			</li>
+			
+			<li>
+				<a href="feedback.html" title="Contact" alt="contact icon">
+					<i class="fa fa-comments-o"> Feedback</i>
+				</a>
+			</li>
+		</ul>
+	</div>
+	
+	<h1 style="text-align:center; font-family: Arial, Helvetica, sans-serif; text-decoration:underline; color:black;">Contact Form </h1>
+	<div class="container">
+  <form action="/action_page.php">
+		<fieldset>
+		<legend><h1> Personal Information </h1> </legend>
+    <label for="fname">First Name</label>
+    <input type="text" id="fname" name="firstname" placeholder="Your name.." required>
+
+    <label for="lname">Last Name</label>
+    <input type="text" id="lname" name="lastname" placeholder="Your last name.." required>
+		
+		<label for="male" required>Your Gender</label>:
+			<input type="radio" name="gender" value="male" id="male"> Male
+			<input type="radio" name="gender" value="female"> Female
+			<input type="radio" name="gender" value="other"> Other  <br><br>
+		
+		<label for="contact">Contact Number</label>:
+    <input type="tel" id="contact" name="lastname" placeholder="Your contact number.." required> <br><br>
+
+    <label for="country">Country</label>
+    <select id="country" name="country" required>
+			<option value="usa">India</option>
+      <option value="australia">Australia</option>
+      <option value="canada">Canada</option>
+      <option value="usa">USA</option>
+    </select>
+
+    <label for="subject">Subject</label>
+    <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+
+    <input type="submit" value="Submit">
+		</fieldset>
+		</form>
+	</div>
+	<h1 style="text-align:center; font-family: Arial, Helvetica, sans-serif; text-decoration:underline; color:black;">Shopzone Location</h1>
+	<div id="contact-map">
+	
+	<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2794.93128198582!2d-73.64165278444025!3d45.53158837910173!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cc91902322e6b5f%3A0xc159e2457254c8a!2s701+Avenue+d&#39;Anvers%2C+Montr%C3%A9al%2C+QC+H3N+1C8!5e0!3m2!1sen!2sca!4v1551213119876"
+	width="99%" height="450" frameborder="0" style="border:3px solid black;margin-left:5px;margin-right:5px;" allowfullscreen></iframe>
+	
+	</div>
+	
+	<a href="#"><button type="button" style="width:100%;padding:10px;margin-top:10px;" >Back to top</button>	</a>
+	
+	<!-- Footer -->
+	<footer class="footer-distributed">
+
+			<div class="footer-left">
+
+				<h3>Shop<span>zone</span></h3>
+
+				<p class="footer-links">
+					<a href="../index.html" title="Home">Home</a>
+					·
+					<a href="categories.html" title="Categories">Categories</a>
+					.
+					<a href="about-us.html" title="About Us">About Us</a>
+					·
+					<a href="contact.html" title="Contact">Contact</a>
+					.
+					<a href="feedback.html" title="Feedback">Feedback</a>  
+				</p>
+
+
+				<p class="footer-company-name">Shopzone &copy; 2019</p>
+			</div>
+
+			<div class="footer-center">
+
+				<div>
+					<i class="fa fa-map-marker"></i>
+					<p><span>701 Avenue d'Anvers</span> Montreal, Quebec</p>
+				</div>
+
+				<div>
+					<i class="fa fa-phone"></i>
+					<p>+1 514 993 1578</p>
+				</div>
+
+				<div>
+					<i class="fa fa-envelope"></i>
+					<p><a href="mailto:support@company.com" title="Connect with us">support@shopzone.com</a></p>
+				</div>
+
+			</div>
+
+			<div class="footer-right">
+
+				<p class="footer-company-about">
+					<span>About the company</span>
+					Shopzone is an e-commerce website.It offers great deals on daily basis.It has vast variety of clothing, electronics and sports options.
+				</p>
+
+				<div class="footer-icons">
+
+					<a href="https://www.facebook.com" title="Facebook"><i class="fa fa-facebook"></i></a>
+					<a href="https://www.twitter.com"  title="Twitter"><i class="fa fa-twitter"></i></a>
+					<a href="https://www.linkedin.com" title="Linked in"><i class="fa fa-linkedin"></i></a>
+					<a href="https://www.gmail.com" title="Gmail"><i class="fa fa-google"></i></a>
+
+				</div>
+
+			</div>
+
+		</footer>
+
+	
+</body>
+</html>	

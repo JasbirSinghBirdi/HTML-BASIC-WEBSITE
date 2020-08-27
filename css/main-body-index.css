@@ -1,0 +1,93 @@
+#home-elec-text {
+	
+	 color:#F0F0F0;
+	 border: 2px solid #F0F0F0; 
+	 font-size:30px;
+  
+}
+.button {
+	position: absolute;
+	top: 75%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: inline-block;
+  border-radius: 4px;
+  background-color: red;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 28px;
+  padding: 20px;
+  width: 300px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+}
+
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button:hover span {
+  padding-right: 25px;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+.pic{
+	margin:20px 0;
+	width:100%;
+	text-align:center;
+	transition:3s;
+}
+#pic-1, #pic-2,#pic-3 {
+	margin-right:2px;
+	width:20%;
+	transition:3s;	
+}
+
+div.pic :hover {
+	
+	transform:scale(1.1);
+}
+figure{
+	float:left;
+}
+
+.welcome-txt {
+	text-align:center;
+	text-decoration:underline;
+	font-family:Georgia;
+	font-size:20px;
+}
+
+#welcome-para {
+	text-align:center;
+	font-family:Georgia;
+	font-size:20px;
+}
+
+figcaption {
+	background-color: red;
+	line-height:50px;
+	font-size:30px;
+	color:white;
+}
+
+#captions {
+	text-decoration:none;
+}

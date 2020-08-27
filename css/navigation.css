@@ -1,0 +1,70 @@
+/* Categories hoves */
+.ul-container {
+	text-align:center;position: sticky;
+	position: -webkit-sticky; /* Safari */
+  line-height:50px;
+  top: 0;
+	
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  background-color: #F0F0F0;
+  margin:0 auto;
+	font-size:25px;
+}
+
+ul li {	
+
+	display:inline-block;
+	text-align:center;
+	margin:0 auto;
+}
+
+li a {
+  display: inline-block;
+  color: black;
+  margin:0 auto;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+
+.ul-container ul li:hover {
+        background-color:darkgray;
+				
+}
+
+.ul-container ul li:hover ul {
+        display: block;
+				
+}
+
+.ul-container ul ul {
+				display: none;
+        position: absolute;
+        top: 79px;
+        width: 11.2%;
+        line-height: 4px;
+        background-color: #F0F0F0 ;
+}
+
+.ul-container ul ul li {
+        display: block; 
+}
+
+.ul-container ul ul li:hover {
+        position: center;
+        
+}
+
+.ul-container ul ul li a {
+        text-decoration: none;
+        color: #000;
+        font-size: medium;
+}
+		
+
+
+	
